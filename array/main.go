@@ -27,12 +27,34 @@ func main() {
 	// primes := [5]int{2, 3, 5, 7, 11}
 	// fmt.Println(primes[0], primes[2], primes[4])
 
-	text := [3]string{
-		"This is a series of long strings",
-		"which would be awkward to place",
-		"together on a single line",
+	// text := [3]string{
+	// 	"This is a series of long strings",
+	// 	"which would be awkward to place",
+	// 	"together on a single line",
+	// }
+	// fmt.Println(text)
+	// fmt.Printf("%#v\n", text)
+	// index := 1
+	// fmt.Println(index, notes[index])
+	// index = 3
+	// fmt.Println(index, notes[index])
+	// for i := 0; i <= 2; i++ {
+	// 	fmt.Println(i, notes[i])
+	// }
+	// for i := 0; i <= 7; i++ {
+	// 	fmt.Println(i, notes[i])
+	// }
+
+	notes := [7]string{"do", "re", "mi", "fa", "so", "la", "ti"}
+	fmt.Println(len(notes))
+	// for index, note := range notes {
+	// 	fmt.Println(index, note)
+	// }
+	// for _, note := range notes {
+	// 	fmt.Println(note)
+	// }
+	for index, _ := range notes {
+		fmt.Println(index)
 	}
-	fmt.Println(text)
-	fmt.Printf("%#v\n", text)
 
 }

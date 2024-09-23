@@ -32,12 +32,19 @@ func main() {
 	//slice = append(slice, "d", "e")
 	//fmt.Println(slice, len(slice))
 	//fmt.Println(slice1, len(slice1))
-	s1 := []string{"s1", "s1"}
-	s2 := append(s1, "s2", "s2")
-	s3 := append(s2, "s3", "s3")
-	s4 := append(s3, "s4", "s4")
-	fmt.Println(s1, s2, s3, s4)
-	s4[0] = "XX"
-	fmt.Println(s1, s2, s3, s4)
-
+	//s1 := []string{"s1", "s1"}
+	//s2 := append(s1, "s2", "s2")
+	//s3 := append(s2, "s3", "s3")
+	//s4 := append(s3, "s4", "s4")
+	//fmt.Println("Length:", len(s1), "Capacity:", cap(s1))
+	//fmt.Println("Length:", len(s2), "Capacity:", cap(s2))
+	//fmt.Println("Length:", len(s3), "Capacity:", cap(s3))
+	//fmt.Println("Length:", len(s4), "Capacity:", cap(s4))
+	//fmt.Println(s1, s2, s3, s4)
+	//s4[0] = "XX"
+	//fmt.Println(s1, s2, s3, s4)
+	var intSlice []int
+	intSlice = append(intSlice)
+	fmt.Printf("intSlice: %#v\n", intSlice)
+	fmt.Println(intSlice)
 }

@@ -1,9 +1,17 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"log"
+
+	"github.com/ducthanhnguyen95/self-study-go/datafile"
+)
 
 func main() {
-	numbers := [3]float64{71.8, 56.2, 89.5}
+	numbers, err := datafile.GetFloats("D:/TCB/self-study-go/readfile/data.txt")
+	if err != nil {
+		log.Fatal(err)
+	}
 	var sum float64 = 0
 	for _, number := range numbers {
 		sum += number

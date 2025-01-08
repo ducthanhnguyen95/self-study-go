@@ -1,3 +1,3 @@
-module github.com/ducthanhnguyen95/self-study-go
+module github.com/ducthanhnguyen95
 
 go 1.21.4

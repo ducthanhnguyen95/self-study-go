@@ -17,30 +17,31 @@ func main() {
 	for _, line := range lines {
 		counts[line]++
 	}
-	fmt.Println(counts)
+	//for name, count := range counts {
+	//	fmt.Printf("Votes for %s: %d\n", name, count)
+	//}
+	fmt.Printf("%#v\n", myStruct)
+	myStruct.number = 3.14
+	myStruct.word = "pie"
+	myStruct.toggle = true
+	fmt.Println(myStruct.number)
+	fmt.Println(myStruct.word)
+	fmt.Println(myStruct.toggle)
+	subscriber.name = "Aman Singh"
+	subscriber.rate = 4.99
+	subscriber.active = true
+	fmt.Println("Name:", subscriber.name)
+	fmt.Println("Monthly rate:", subscriber.rate)
+	fmt.Println("Active?", subscriber.active)
 }
 
-//func main() {
-//	lines, err := datafile.GetStrings("D:/TCB/self-study-go/readfile/votes.txt")
-//	if err != nil {
-//		log.Fatal(err)
-//	}
-//	var names []string
-//	var counts []int
-//	for _, line := range lines {
-//		matched := false
-//		for i, name := range names {
-//			if name == line {
-//				counts[i]++
-//				matched = true
-//			}
-//		}
-//		if matched == false {
-//			names = append(names, line)
-//			counts = append(counts, 1)
-//		}
-//	}
-//	for i, name := range names {
-//		fmt.Printf("%s: %d\n", name, counts[i])
-//	}
-//}
+var myStruct struct {
+	number float64
+	word   string
+	toggle bool
+}
+var subscriber struct {
+	name   string
+	rate   float64
+	active bool
+}
